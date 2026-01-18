@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>매출장부 - 스마트한 장부 관리 앱</title>
+    <link rel="stylesheet" href="styles_vanilla.css">
+</head>
+<body>
+    <!-- Header -->
+    <div class="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo-box">
+                    <svg class="logo-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+                    </svg>
+                </div>
+                <div class="header-text">
+                    <h1 class="logo-title">매출장부</h1>
+                    <p class="logo-subtitle">스마트한 장부 관리 앱</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <div class="main-content">
+        <div class="container">
+            <!-- Hero Section -->
+            <div class="hero-section">
+                <h2 class="hero-title">앱 스토어 프로모션 스크린샷</h2>
+                <p class="hero-description">소상공인과 개인사업자를 위한 매출장부 앱의 주요 기능을 확인해보세요</p>
+            </div>
+
+            <!-- Screenshot Gallery -->
+            <div class="gallery-container">
+                <div class="gallery-grid">
+                    <!-- Phone Mockup -->
+                    <div class="phone-section">
+                        <div class="phone-mockup">
+                            <div class="phone-frame">
+                                <div class="phone-notch"></div>
+                                <div class="phone-screen">
+                                    <img id="screenshot-image" src="" alt="App Screenshot" class="screenshot-img">
+                                </div>
+                            </div>
+                            <div class="badge">
+                                <span id="screenshot-badge">온보딩</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Description Section -->
+                    <div class="description-section">
+                        <div class="screenshot-info">
+                            <div class="counter">
+                                <span id="current-index">1</span> / <span id="total-count">9</span>
+                            </div>
+                            <h3 id="screenshot-title" class="screenshot-title">매출장부로 쉽게 시작하세요</h3>
+                            <p id="screenshot-description" class="screenshot-description">
+                                소상공인과 개인사업자를 위한 스마트한 장부 관리 앱입니다. 일일 수입/지출 기록부터 월별 통계까지 한 번에 관리하세요.
+                            </p>
+                        </div>
+
+                        <!-- Navigation -->
+                        <div class="navigation-section">
+                            <button id="btn-prev" class="nav-btn nav-btn-prev" aria-label="이전 스크린샷">
+                                <svg class="arrow-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
+                                </svg>
+                            </button>
+
+                            <button id="btn-next" class="nav-btn nav-btn-next" aria-label="다음 스크린샷">
+                                <svg class="arrow-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+                                </svg>
+                            </button>
+
+                            <!-- Dots Indicator -->
+                            <div class="dots-container" id="dots-container"></div>
+                        </div>
+
+                        <!-- Key Features -->
+                        <div class="features-section">
+                            <h4 class="features-title">주요 기능</h4>
+                            <div class="features-grid">
+                                <div class="feature-item">
+                                    <div class="feature-icon feature-icon-green">
+                                        <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                                        </svg>
+                                    </div>
+                                    <div>
+                                        <div class="feature-name">일일 수입/지출 기록</div>
+                                        <div class="feature-desc">빠르고 간편하게</div>
+                                    </div>
+                                </div>
+                                <div class="feature-item">
+                                    <div class="feature-icon feature-icon-blue">
+                                        <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z" />
+                                        </svg>
+                                    </div>
+                                    <div>
+                                        <div class="feature-name">월별 통계 분석</div>
+                                        <div class="feature-desc">자동 차트 생성</div>
+                                    </div>
+                                </div>
+                                <div class="feature-item">
+                                    <div class="feature-icon feature-icon-purple">
+                                        <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 7h.01M7 3h5c.512 0 1.024.195 1.414.586l7 7a2 2 0 010 2.828l-7 7a2 2 0 01-2.828 0l-7-7A1.994 1.994 0 013 12V7a4 4 0 014-4z" />
+                                        </svg>
+                                    </div>
+                                    <div>
+                                        <div class="feature-name">카테고리별 관리</div>
+                                        <div class="feature-desc">지출 분류 시스템</div>
+                                    </div>
+                                </div>
+                                <div class="feature-item">
+                                    <div class="feature-icon feature-icon-orange">
+                                        <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                                        </svg>
+                                    </div>
+                                    <div>
+                                        <div class="feature-name">자산 관리</div>
+                                        <div class="feature-desc">은행/카드 통합</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- All Screenshots Grid -->
+            <div class="screenshots-grid-section">
+                <h3 class="grid-title">전체 스크린샷 보기</h3>
+                <div class="screenshots-grid" id="screenshots-grid"></div>
+            </div>
+
+            <!-- Download Section -->
+            <div class="download-section">
+                <h3 class="download-title">지금 바로 시작하세요</h3>
+                <p class="download-description">매출장부로 스마트한 재무 관리를 경험해보세요</p>
+                <div class="download-buttons">
+                    <button class="download-btn download-btn-ios">
+                        <svg class="store-icon" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M17.05 20.28c-.98.95-2.05.8-3.08.35-1.09-.46-2.09-.48-3.24 0-1.44.62-2.2.44-3.06-.35C2.79 15.25 3.51 7.59 9.05 7.31c1.35.07 2.29.74 3.08.8 1.18-.24 2.31-.93 3.57-.84 1.51.12 2.65.72 3.4 1.8-3.12 1.87-2.38 5.98.48 7.13-.57 1.5-1.31 2.99-2.54 4.09l.01-.01zM12.03 7.25c-.15-2.23 1.66-4.07 3.74-4.25.29 2.58-2.34 4.5-3.74 4.25z"/>
+                        </svg>
+                        App Store
+                    </button>
+                    <button class="download-btn download-btn-android">
+                        <svg class="store-icon" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M3,20.5V3.5C3,2.91 3.34,2.39 3.84,2.15L13.69,12L3.84,21.85C3.34,21.6 3,21.09 3,20.5M16.81,15.12L6.05,21.34L14.54,12.85L16.81,15.12M20.16,10.81C20.5,11.08 20.75,11.5 20.75,12C20.75,12.5 20.53,12.9 20.18,13.18L17.89,14.5L15.39,12L17.89,9.5L20.16,10.81M6.05,2.66L16.81,8.88L14.54,11.15L6.05,2.66Z"/>
+                        </svg>
+                        Google Play
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="footer">
+        <div class="container">
+            <p class="footer-text">© 2026 매출장부. 소상공인과 개인사업자를 위한 스마트한 장부 관리 솔루션</p>
+        </div>
+    </div>
+
+    <script src="script_vanilla.js"></script>
+</body>
+</html>
